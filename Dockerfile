@@ -8,4 +8,4 @@ RUN chmod 775 /docker-entrypoint.sh
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-CMD ["/bin/sh"]
+CMD ["/docker-entrypoint.sh"]

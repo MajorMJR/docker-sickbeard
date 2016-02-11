@@ -8,6 +8,8 @@ python setup.py install
 
 mkdir /sickbeard
 cd /sickbeard
-if [ -d "Sick-Beard" ]; then
+if [ ! -d "Sick-Beard" ]; then
 	git clone git://github.com/midgetspy/Sick-Beard.git
 fi
+
+python /sickbeard/Sick-Beard/SickBeard.py
