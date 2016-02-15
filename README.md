@@ -4,3 +4,8 @@ Config
 Mount and download or watch directories to the container as a volume to allow access for transferring files.
 
 To build, run, and debug the container use the provided Makefile. 
+
+Ex:
+
+docker pull majormjr/docker-sickbeard
+docker run -d -v /sickbeard:/sickbeard -p 8081:8081 majormjr/docker-sickbeard -
