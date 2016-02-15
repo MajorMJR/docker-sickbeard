@@ -8,6 +8,11 @@ RUN tar -zxvf Cheetah-2.4.4.tar.gz && cd Cheetah-2.4.4 && python setup.py instal
 COPY docker-entrypoint.sh /
 RUN chmod 775 /docker-entrypoint.sh
 
+VOLUME /sickbeard
+VOLUME /video_downloads
+
+EXPOSE 8081
+
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["/docker-entrypoint.sh"]
